@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3EA5D18F-B794-48EB-8C1A-4735D338C354}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>TESCO CLUBCARD</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <SignManifests>true</SignManifests>
+    <ManifestCertificateThumbprint>13E8314BB1A0D3FA16141EB553F6AEF3E62AEF7A</ManifestCertificateThumbprint>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationIcon>App icon.ico</ApplicationIcon>
+    <PublishUrl>\\192.168.8.2\lotus\DEPLOY\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>2.0.0.16</MinimumRequiredVersion>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <ApplicationRevision>16</ApplicationRevision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TESCO CLUBCARD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\bin\Release\</OutputPath>
+    <DocumentationFile>TESCO CLUBCARD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00Module\Calendar_bas.vb" />
+    <Compile Include="01Form\FRmChkDigit.Designer.vb">
+      <DependentUpon>FRmChkDigit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FRmChkDigit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmChkDup.Designer.vb">
+      <DependentUpon>FrmChkDup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmChkDup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmCounting.Designer.vb">
+      <DependentUpon>FrmCounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmCounting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmDAily.Designer.vb">
+      <DependentUpon>FrmDAily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmDAily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmDailyKeyin.Designer.vb">
+      <DependentUpon>FrmDailyKeyin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmDailyKeyin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmGenXML.Designer.vb">
+      <DependentUpon>FrmGenXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmGenXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FRmIncompleted.Designer.vb">
+      <DependentUpon>FRmIncompleted.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FRmIncompleted.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FRmKeyin.Designer.vb">
+      <DependentUpon>FRmKeyin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FRmKeyin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmMailbag.Designer.vb">
+      <DependentUpon>FrmMailbag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmMailbag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\Frmcalendar.Designer.vb">
+      <DependentUpon>Frmcalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\Frmcalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmGenSubmit.Designer.vb">
+      <DependentUpon>FrmGenSubmit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmGenSubmit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmMoveIMG.Designer.vb">
+      <DependentUpon>FrmMoveIMG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmMoveIMG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmOfficer.Designer.vb">
+      <DependentUpon>FrmOfficer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmOfficer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmQuery.Designer.vb">
+      <DependentUpon>FrmQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmReGenXML.Designer.vb">
+      <DependentUpon>FrmReGenXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmReGenXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmStore.Designer.vb">
+      <DependentUpon>FrmStore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmStore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01Form\FrmWeek.Designer.vb">
+      <DependentUpon>FrmWeek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="01Form\FrmWeek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02Class\ClsClubcard.vb" />
+    <Compile Include="02Class\ClsConnectMySQL.vb" />
+    <Compile Include="02Class\ClsConnectNet.vb" />
+    <Compile Include="02Class\ClsCounting.vb" />
+    <Compile Include="02Class\ClsMailbag.vb" />
+    <Compile Include="02Class\ClsOfficer.vb" />
+    <Compile Include="02Class\ClsGPG.vb" />
+    <Compile Include="00Module\ModGlobal.vb" />
+    <Compile Include="02Class\ClsStore.vb" />
+    <Compile Include="02Class\ClsWeek.vb" />
+    <Compile Include="02Class\ClsXML.vb" />
+    <Compile Include="03 XSD\DailyKeyinXSD.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyKeyinXSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="03 XSD\DailyKeyinXSD.vb">
+      <DependentUpon>DailyKeyinXSD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="04 Report\RptDailyKeyin.vb">
+      <DependentUpon>RptDailyKeyin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="04 Report\RptDailyQC.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDailyQC.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="01Form\FRmChkDigit.resx">
+      <DependentUpon>FRmChkDigit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmChkDup.resx">
+      <DependentUpon>FrmChkDup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmCounting.resx">
+      <DependentUpon>FrmCounting.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmDAily.resx">
+      <DependentUpon>FrmDAily.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmDailyKeyin.resx">
+      <DependentUpon>FrmDailyKeyin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmGenXML.resx">
+      <DependentUpon>FrmGenXML.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FRmIncompleted.resx">
+      <DependentUpon>FRmIncompleted.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FRmKeyin.resx">
+      <DependentUpon>FRmKeyin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmMailbag.resx">
+      <DependentUpon>FrmMailbag.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\Frmcalendar.resx">
+      <DependentUpon>Frmcalendar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmGenSubmit.resx">
+      <DependentUpon>FrmGenSubmit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmMoveIMG.resx">
+      <DependentUpon>FrmMoveIMG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmOfficer.resx">
+      <DependentUpon>FrmOfficer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmQuery.resx">
+      <DependentUpon>FrmQuery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmReGenXML.resx">
+      <DependentUpon>FrmReGenXML.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmStore.resx">
+      <DependentUpon>FrmStore.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01Form\FrmWeek.resx">
+      <DependentUpon>FrmWeek.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04 Report\RptDailyKeyin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDailyKeyin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04 Report\RptDailyQC.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDailyQC.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="03 XSD\DailyHeader.xsc">
+      <DependentUpon>DailyHeader.xsd</DependentUpon>
+    </None>
+    <Content Include="03 XSD\DailyHeader.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="03 XSD\DailyHeader.xss">
+      <DependentUpon>DailyHeader.xsd</DependentUpon>
+    </None>
+    <None Include="03 XSD\DailyKeyinXSD.xsc">
+      <DependentUpon>DailyKeyinXSD.xsd</DependentUpon>
+    </None>
+    <Content Include="03 XSD\DailyKeyinXSD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyKeyinXSD.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App icon.ico" />
+    <Content Include="test.ico" />
+    <None Include="ClassDiagram10.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ClassDiagram5.cd" />
+    <None Include="ClassDiagram6.cd" />
+    <None Include="ClassDiagram7.cd" />
+    <None Include="ClassDiagram8.cd" />
+    <None Include="ClassDiagram9.cd" />
+    <None Include="Resources\add.jpg" />
+    <None Include="Resources\search.jpg" />
+    <None Include="Resources\save.jpg" />
+    <None Include="Resources\new.jpg" />
+    <None Include="Resources\icon.jpg" />
+    <None Include="Resources\exit.jpg" />
+    <None Include="Resources\delete.jpg" />
+    <None Include="03 XSD\DailyKeyinXSD.xss">
+      <DependentUpon>DailyKeyinXSD.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
